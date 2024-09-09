@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konversi Nilai & Kalkulator Sederhana</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            .container {
+                margin-bottom: 40px;
+            }
+            input[type="text"], input[type="number"] {
+                padding: 5px;
+                margin: 10px 0;
+                width: 200px;
+            }
+            input[type="button"] {
+                padding: 5px 10px;
+                margin: 5px;
+            }
+            label {
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            
+            function konversiNilai() {
+                var nilai = document.getElementById("nilaiAngka").value;
+                var nilaiHuruf;
+
+                if (nilai >= 0 && nilai <= 40) {
+                    nilaiHuruf = "E";
+                } else if (nilai >= 41 && nilai <= 55) {
+                    nilaiHuruf = "D";
+                } else if (nilai >= 56 && nilai <= 60) {
+                    nilaiHuruf = "C";
+                } else if (nilai >= 61 && nilai <= 65) {
+                    nilaiHuruf = "BC";
+                } else if (nilai >= 66 && nilai <= 70) {
+                    nilaiHuruf = "B";
+                } else if (nilai >= 71 && nilai <= 80) {
+                    nilaiHuruf = "AB";
+                } else if (nilai >= 81 && nilai <= 100) {
+                    nilaiHuruf = "A";
+                } else {
+                    nilaiHuruf = "Nilai tidak valid!";
+                }
+
+                document.getElementById("nilaiHuruf").value = nilaiHuruf;
+            }
+
+            
+            function hitung(operator) {
+                var bil1 = parseFloat(document.getElementById("bil1").value);
+                var bil2 = parseFloat(document.getElementById("bil2").value);
+                var hasil;
+
+                if (operator == '+') {
+                    hasil = bil1 + bil2;
+                } else if (operator == '-') {
+                    hasil = bil1 - bil2;
+                } else if (operator == '*') {
+                    hasil = bil1 * bil2;
+                } else if (operator == '/') {
+                    hasil = bil1 / bil2;
+                }
+
+                document.getElementById("hasil").value = hasil;
+            }
+        </script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <h2>Konversi Nilai Angka ke Nilai Huruf</h2>
+            <label for="nilaiAngka">Masukkan Nilai Angka (0-100):</label>
+            <input type="number" id="nilaiAngka" min="0" max="100" placeholder="Masukkan angka">
+            
+            <input type="button" value="Konversi" onclick="konversiNilai()">
+            <br>
+            <label for="nilaiHuruf">Nilai Huruf:</label>
+            <input type="text" id="nilaiHuruf" readonly>
+        </div>
+
+        
+        <div class="container">
+            <h2>Kalkulator Sederhana</h2>
+            <label for="bil1">Bilangan 1:</label>
+            <input type="number" id="bil1" placeholder="Masukkan bilangan pertama">
+            <br>
+            <label for="bil2">Bilangan 2:</label>
+            <input type="number" id="bil2" placeholder="Masukkan bilangan kedua">
+            <br>
+            <input type="button" value="+" onclick="hitung('+')">
+            <input type="button" value="-" onclick="hitung('-')">
+            <input type="button" value="x" onclick="hitung('*')">
+            <input type="button" value="/" onclick="hitung('/')">
+            <br>
+            <label for="hasil">Hasil:</label>
+            <input type="text" id="hasil" readonly>
+        </div>
+    </body>
+</html>
