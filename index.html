@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farhan Zia Rizky - Tugas</title>
+    <title>Farhan Zia Rizky</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Farhan Zia Rizky</h1>
-            <p>Daftar Tugas</p>
-        </div>
-    </header>
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="Pemrograman Website/Tugas_1/tugas1.html">Tugas 1</a></li>
-                <li><a href="Pemrograman Website/Tugas_2/tugas2.html">Tugas 2</a></li>
-                <li><a href="Pemrograman Website/Tugas_3/LatihanJS.html">Tugas 3</a></li>
-                <!-- Tambahkan link tugas lain di sini -->
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#biodata">Biodata</a></li>
+            <li><a href="#tugas">Tugas</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
     </nav>
-    <main>
-        <div class="container">
-            <section id="tugas1">
-                <h2>Tugas 1</h2>
-                <p>Membuat Biodata dalam Kerangka HTML</p>
-            </section>
-            <section id="tugas2">
-                <h2>Tugas 2</h2>
-                <p>Membuat Tabel Biodata dalam HTML dipadukan dengan CSS</p>
-            </section>
-            <section id="tugas3">
-                <h2>Tugas 3</h2>
-                <p>Membuat Konversi Nilai dan Kalkulator Sederhana dengan JavaScript</p>
-            </section>
-            <!-- Tambahkan bagian tugas lain di sini -->
+
+    <header id="home">
+        <h1>Selamat Datang</h1> <br>
+    </header>
+
+    <section id="biodata" class="content-section">
+        <h2>Biodata</h2>
+        <div class="biodata-content">
+            <p><strong>Nama:</strong> Farhan Zia Rizky</p>
+            <p><strong>NPM:</strong> 140810230074</p>
+            <p><strong>Jurusan:</strong> Teknik Informatika</p>
+            <p><strong>Mata Kuliah:</strong> Pemrograman Web</p>
         </div>
-    </main>
+    </section>
+
+    <section id="tugas" class="content-section">
+        <h2>Tugas</h2>
+        <ul class="tugas-list">
+            <li><strong><a href="Pemrograman Website/Tugas_1/tugas1.html">Tugas 1:</a></strong> Membuat Halaman Biodata Menggunakan HTML</li>
+            <li><strong><a href="Pemrograman Website/Tugas_2/tugas2.html">Tugas 2:</a></strong> Membuat Halam Biodata Menggunakan HTML dan CSS dalam bentuk tabel</li>
+            <li><strong><a href="Pemrograman Website/Tugas_3/LatihanJS.html">Tugas 3:</a></strong> Membuat program berupa konversi nilai dan kalkulator sederhana</li>
+        </ul>
+    </section>
+
+    <section id="kontak" class="content-section">
+        <h2>Kontak</h2>
+        <p>Jika ingin menghubungi saya, silakan kirim email ke <strong>farhanziarizky@gmail.com</strong>.</p>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Farhan Zia Rizky</p>
-        </div>
+        <p>&copy; 2024 Farhan Zia Rizky</p>
     </footer>
 </body>
 </html>
