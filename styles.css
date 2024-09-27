@@ -18,7 +18,6 @@ nav {
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    font-size: 10px;
 }
 
 nav ul {
@@ -34,10 +33,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #1abc9c;
 }
 
 /* Header Styles */
@@ -47,7 +47,6 @@ header {
     background-color: #1abc9c;
     color: white;
     border-radius: 10px;
-    font-size: 10px;
 }
 
 header h1 {
@@ -64,6 +63,14 @@ header p {
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
+    width: 80%; /* Menentukan lebar section agar berada di tengah */
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+}
+
+.content-section:hover {
+    background-color: #dfe6e9;
 }
 
 h2 {
@@ -75,15 +82,21 @@ h2 {
 .biodata-content p, .tugas-list li, .tugas-list strong, section#kontak p {
     font-size: 1.2em;
     margin: 10px 0;
+    text-align: justify; /* Rata kiri dan kanan */
+    text-justify: inter-word; /* Memastikan spasi antar kata */
 }
 
 .tugas-list {
     list-style-type: none;
     padding-left: 0;
+    text-align: justify; /* Rata kiri-kanan untuk daftar tugas */
+    text-justify: inter-word;
 }
 
 .tugas-list li {
     margin: 10px 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Footer Styles */
@@ -95,6 +108,29 @@ footer {
     color: white;
 }
 
-.content-section{
+.content-section {
     text-align: center;
+}
+
+/* Animasi Hover */
+.tugas-list li a {
+    color: #34495e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tugas-list li a:hover {
+    color: #e74c3c;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
 }
