@@ -1,0 +1,110 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form table styling */
+table.form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table.form th, table.form td {
+    padding: 10px;
+    text-align: left;
+}
+
+table.form th {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+table.form td {
+    text-align: left;
+}
+
+input[type="text"], input[type="date"], select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    padding: 8px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Update button */
+button.update {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.update:hover {
+    background-color: #45a049;
+}
+
+/* Kembali button */
+button.kembali {
+    background-color: #007BFF;
+    color: white;
+    margin-top: 10px;
+}
+
+button.kembali:hover {
+    background-color: #0056b3;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button a:hover {
+    text-decoration: underline;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,103 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container1 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+.table {
+    text-align: center;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Button Styling */
+.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.input, .logout {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 12px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+input a, .logout a, .edit a, .delete a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Link hover */
+button a:hover {
+    text-decoration: underline;
+}
+
+input a:hover, .logout a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
